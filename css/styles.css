@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+body {
+	background-color: hsl(30, 38%, 92%);
+	max-width: 1440px;
+	width: 100%;
+	margin: 0;
+}
+h1 {
+	color: hsl(212, 21%, 14%);
+	font-family: "Fraunces";
+	font-weight: 700;
+	line-height: 90%;
+}
+h5 {
+	color: hsl(228, 12%, 48%);
+	font-family: "Montserrat";
+	font-weight: 500;
+	letter-spacing: 3px;
+}
+p {
+	color: hsl(228, 12%, 48%);
+	font-size: 14px;
+	font-family: "Montserrat";
+	
+}
+button {
+	background-color: hsl(158, 36%, 37%);
+}
+.container {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+.card {
+	background-color: hsl(0, 0%, 100%);
+	min-width: 600px;
+	width: 30%;
+	margin: 0 auto;
+	border-radius: 8px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "left right";
+}
+.banner {
+	grid-area: left;
+	background-image: url("../images/image-product-desktop.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 8px 0 0 8px;
+	max-width: 100%;
+	height: 100%;
+}
+
+.card-body {
+	grid-area: right;
+	padding: 35px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 0px;
+}
+.card-body h5 {
+	margin: 0;
+}
+
+.price-container {
+	display: flex;
+	align-items: center;
+}
+.price {
+	color: hsl(158, 36%, 37%);
+}
+.discount {
+	margin-left: 30px;
+}
+
+.card-body button {
+	width: 100%;
+	padding: 15px 0;
+	text-align: center;
+	color: hsl(0, 0%, 100%);
+	border: none;
+	border-radius: 10px;
+
+}
+
+.card-body button img{
+	margin-right: 15px;
+
+}
+
+@media only screen and (max-width:  375px){
+
+	.container {
+		min-height: 100vh;
+		height: auto;
+	}
+	.card {
+		min-width: 350px;
+		width: 100%%;
+		height: auto;
+		margin: 20px auto;
+		grid-template-columns: auto;
+		grid-template-rows: 1.2fr 2fr;
+		grid-template-areas: "left" "right";
+	}
+	.banner {
+		background-image: url("../images/image-product-mobile.jpg");
+		border-radius: 8px 8px 0 0;
+	}
+
+}
+
+
+
+/*# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700
+*/
